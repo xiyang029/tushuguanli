@@ -58,10 +58,7 @@
             <!-- 这里将用 JavaScript 填充数据 -->
             </tbody>
         </table>
-        <div class="pagination" id="pagination">
-            <button id="prevPage" class="button" onclick="prevPage()">上一页</button>
-            <button id="nextPage" class="button" onclick="nextPage()">下一页</button>
-        </div>
+
     </div>
 </div>
 </body>
