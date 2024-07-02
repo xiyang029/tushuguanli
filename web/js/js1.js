@@ -34,7 +34,7 @@ function showBooks(page) {
 
 // 获取所有书籍数据
 function fetchBooks() {
-    fetch('http://localhost:8080/tushuguanli_war_exploded/fetchBooks')
+    fetch('../fetchBooks')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
@@ -55,7 +55,7 @@ function searchBooks() {
     // 使用 AJAX 发送 GET 请求
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:8080/tushuguanli_war_exploded/searchBook',
+        url: '../searchBook',
         data: {
             title: searchTerm
         },

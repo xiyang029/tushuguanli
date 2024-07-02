@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function loadBorrowData() {
         $.ajax({
-            url: 'http://localhost:8080/tushuguanli_war_exploded/fetchBorrow',
+            url: '../fetchBorrow',
             method: 'GET',
             dataType: 'json',
             success: function(data) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
     function returnBook(borrowId) {
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:8080/tushuguanli_war_exploded/delborrow',
+            url: '../delborrow',
             data: { borrowId: borrowId },
             success: function(response) {
                 alert('成功删除借阅记录: ' + response);
