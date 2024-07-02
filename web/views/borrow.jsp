@@ -118,7 +118,7 @@
 <div id="borrowModal" class="borrow-modal">
     <div class="borrow-modal-content">
         <h2>借阅信息</h2>
-        <form action="http://localhost:8080/tushuguanli_war_exploded/borrowBookServlet" method="post" accept-charset="UTF-8">
+        <form action="../borrowBookServlet" method="post" accept-charset="UTF-8">
             <div class="form-group">
                 <label for="borrowBookTitle">书本名称:</label>
                 <input type="text" id="borrowBookTitle" name="borrowBookTitle" readonly>
